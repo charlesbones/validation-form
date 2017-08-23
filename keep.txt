@@ -1,0 +1,8 @@
+<div>
+  Country:
+  <select class="crs-country" data-region-id="one"></select>
+</div>
+<div>
+  State:
+  <select id="one"></select>
+</div>
