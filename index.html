@@ -26,6 +26,9 @@
     	background: rgba(255, 255, 255, 0.8);
     	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
     }
+    #captcha{
+      margin: 0 auto;
+    }
   </style>
   <body>
     <div class="container">
@@ -111,7 +114,8 @@
                    <textarea class="form-control" rows="5" id="comment"></textarea>
                 </div>
                 <br />
-                <div class="g-recaptcha" data-sitekey="6LcW2y0UAAAAAHzFzmLWYMtWuU6sAGeAPTbWtmrj"></div>
+                <div id="captcha" class="g-recaptcha" data-sitekey="6LcW2y0UAAAAAHzFzmLWYMtWuU6sAGeAPTbWtmrj"></div>
+                <br />
 			    			<input type="submit" value="Register" class="btn btn-info btn-block">
 			    		</form>
             </div>
