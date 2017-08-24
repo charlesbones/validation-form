@@ -39,8 +39,7 @@
 			    		<h3 class="panel-title" style="text-align: center;">CTC validation form</h3>
 			 			</div>
 			 			<div class="panel-body">
-			    		<form role="form">
-
+			    		<form role="form" action="contact.php" enctype="multipart/form-data">
                 <div class="form-group">
                   <div class="row">
                     <div class="col">
@@ -49,10 +48,10 @@
                   </div>
                   <div class="row">
                     <div class="col">
-                      <select class="form-control crs-country" id="countries" data-region-id="list-country"></select>
+                      <select name="country" class="form-control crs-country" id="countries" data-region-id="list-country"></select>
                     </div>
                     <div class="col">
-                      <select class="form-control" id="list-country"></select>
+                      <select name="state" class="form-control" id="list-country"></select>
                     </div>
                   </div>
                 <script>
@@ -77,8 +76,8 @@
 			    					<div class="form-group input-append">
                       <hr />
                       <div id="field1">
-			                <input type="text" name="first_teacher" id="name1" name="name1" class="form-control input-sm" placeholder="Teacher's name" required><br />
-                      <input type="text" name="last_name" id="email1" name="email1" class="form-control input-sm" placeholder="Email" required>
+			                <input type="text" id="name1" name="name1" class="form-control input-sm" placeholder="Teacher's name" required><br />
+                      <input type="text" id="email1" name="email1" class="form-control input-sm" placeholder="Email" required>
                     </div>
                     <br />
                     <button id="b1" class="btn btn-info add-more" type="button">+</button>
@@ -92,7 +91,7 @@
                       <div class="col-xs-12">
                           <div class="col-md-12 well text-center">
                             <label for="fileToUpload">Please upload the invoice (JPG, PNG, GIF, TIFF or PDF)</label>
-                            <input type="file" name="fileToUpload" id="fileToUpload" accept="image/jpeg image/gif image/tiff image/x-png application/pdf" required/>
+                            <input type="file" name="fileToUpload" id="fileToUpload" accept="image/jpeg image/gif image/tiff image/x-png application/pdf application/x-zip-compressed" required/>
                           </div>
 			    			      </div>
                   </div>
